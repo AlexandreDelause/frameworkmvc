@@ -1,0 +1,7 @@
+DirectorySlash Off
+RewriteEngine On
+RewriteBase /PHP_Avance_my_framework/public_html/my_framework/
+RewriteCond %{REQUEST_URI} !^/PHP_Avance_my_framework/public_html/my_framework/(static/.+|index\.php|robots\.txt)$
+RewriteRule ^ index.php [QSA,L]
+# Header set X-Robots-Tag "none"
+# Header set Cache-Control "no-cache, no-store"
